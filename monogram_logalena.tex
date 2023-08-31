@@ -92,14 +92,15 @@
 % (11, -3);
 %---------------------------------------------------------
 %bigger E, more vertical L
-\draw[line width=3mm, line cap=round]
+\newcommand\thicc{5mm}
+\draw[line width=\thicc, line cap=round]
 % (-0.75, 6.5) to[out=0, in=180]
 (0.0, 6.5) to[out=0, in=180]
 % (1, 8) to[out=0, in=180]
 % (2.5, 7.5) to[out=0, in=-90]
 (5, 5) to[out=0, in=-50] %bottom of upper left loop
 (7.5, 7.0); %round end to smooth thick lines
-\draw[line width=3mm, line cap=round]
+\draw[line width=\thicc, line cap=round]
     (7.5, 7.0) to[out=135, in=70] %far end of upper left loop
 (5, 5) to[out=-110, in=20] %top of upper left loop
 % (5.5, 6.0) to[out=-110, in=70] %top of upper left loop
@@ -120,12 +121,12 @@
 (6.46, -0.25) -- %flatten the L to become the E middle line
 (9.66, -0.1);
 %E..................
-\draw[line width=3mm, line cap=round]
+\draw[line width=\thicc, line cap=round]
 (10.75000005, 3.5) to[out=180, in=0] %top line right
 (7.55, 3.5);
-\draw[line width=3mm, line cap=round]
+\draw[line width=\thicc, line cap=round]
 (7.55, 3.5) -- (6.46, -0.25);
-    \draw[line width=3mm, line cap=round]
+    \draw[line width=\thicc, line cap=round]
 (6.46, -0.25) to[out=-105, in=170] %x=5.5 - 3*tan(10)
 (7.5, -2.6) to[out=-10, in=190]
 (10.5, -2.3);
