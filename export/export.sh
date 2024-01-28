@@ -12,8 +12,8 @@ fi
 mkdir -p export
 cp -rp $1.pdf export/.
 #Make PNG with Imagemagick (Allow permission with: https://askubuntu.com/questions/1127260/imagemagick-convert-not-allowed)
-# convert -density 300 $1.pdf -quality 90 export/$1.png
-convert -density 300 $1.pdf -quality 90 -define png:color-type=6  export/$1.png
+convert -density 300 $1.pdf -quality 90 export/$1.png
+# convert -density 300 $1.pdf -quality 90 -define png:color-type=6  export/$1.png
 
 
 #Make SVG with inkscape/ghostscript

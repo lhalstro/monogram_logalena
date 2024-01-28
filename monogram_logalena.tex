@@ -1,7 +1,16 @@
 \documentclass{standalone}
 \usepackage{freetikz}
+\usepackage{xcolor}
+% \definecolor{lupine}{rgb}{152,137,205}
+\definecolor{lupine}{rgb}{0.60,0.54,0.80}
 \begin{document}
 \begin{tikzpicture}
+
+%SET COLOR OF MONOGRAM
+% \newcommand\monogramcolor{black}
+\newcommand\monogramcolor{lupine}
+
+
 %   \draw (1, 7.5) to[out=0, in=-90] (4.5, 7.5) to[out=90, in=0] (4.5, 8) to[out=180, in=90] (3, 7.5) to[out=-90, in=0] (2, 4) to[out=180, in=-90] (1, 4) to[out=90, in=180] (1.5, 5) to[out=0, in=180] (6, 4);
 %   \draw (0.5, 8) to[out=0, in=180]
 %         (1, 8) to[out=0, in=180]
@@ -101,7 +110,7 @@
 %
 %
 \newcommand\thicc{5mm}
-\draw[line width=\thicc, line cap=round, line join=round]
+\draw[line width=\thicc, line cap=round, line join=round, draw=\monogramcolor]
 % (-0.75, 6.5) to[out=0, in=180]
 (0.0, 6.4375) to[out=0, in=180]
 %
@@ -122,7 +131,7 @@
 %   /
 %  (____/
 %
-\draw[line width=\thicc, line cap=round, line join=round]
+\draw[line width=\thicc, line cap=round, line join=round, draw=\monogramcolor]
 (10.8125, 3.5) to[out=180, in=0] %top line right
 (7.55, 3.5) --  %E, top line, left
 % L slope = -110deg
